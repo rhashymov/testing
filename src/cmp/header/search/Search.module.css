@@ -1,0 +1,8 @@
+.search {
+    display: flex;
+    height: 20px;
+}
+
+input {
+    bottom: 0;
+}

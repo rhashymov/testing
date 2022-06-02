@@ -1,0 +1,8 @@
+.navigation {
+    display: flex;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}

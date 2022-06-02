@@ -1,0 +1,17 @@
+.menu {
+    background-color: rgb(151, 151, 151);
+    width: 20vw;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.menuItem {
+    height: 5ch;
+}
+.menuItem:hover {
+    background-color: rgb(128, 128, 128);
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

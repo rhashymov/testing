@@ -1,0 +1,8 @@
+.body {
+    height: 100vh;
+}
+
+.bodyH {
+    display: flex;
+    height: 93vh;
+}
