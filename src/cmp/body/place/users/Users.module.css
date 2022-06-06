@@ -5,3 +5,9 @@
 .selectedPage {
     font-weight: bold;
 }
+
+.loader {
+    height: 50px;
+    width: 50px;
+    
+}

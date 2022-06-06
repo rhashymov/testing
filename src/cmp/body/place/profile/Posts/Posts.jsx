@@ -1,10 +1,11 @@
 import React from "react"
 import MyPosts from "./MyPosts/MyPosts"
-import s from "./Profile.module.css"
+import s from "./../Profile.module.css"
+import Loader from "../../../../common/loader/Loader"
 
 
 
-const Profile = (props) => {
+const Posts = (props) => {
     let posts = props.posts.map(p => <MyPosts posts={p.message} />)
     let newPostElement = React.createRef()
     let addPost = () => {
@@ -14,7 +15,15 @@ const Profile = (props) => {
         let text = newPostElement.current.value
         props.updateNewPostText(text)
     }
+    if(!props.profile) {
+        return <Loader/>
+    }
     return <div>
+        <div>
+            <img src={props.profile.photos.large} />
+            <p>i am {props.profile.fullName}</p>
+        </div>
+        
         <div>
             <textarea className={s.post} ref={newPostElement} value={props.newPostText} placeholder="Напишите Ваш текст" onChange={onPostChange} />
         </div>
@@ -27,4 +36,4 @@ const Profile = (props) => {
     </div>
 }
 
-export default Profile
+export default Posts
